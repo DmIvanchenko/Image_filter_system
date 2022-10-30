@@ -1,0 +1,18 @@
+{
+    "version": "0.2.1",
+    "tasks": [
+        {
+            "taskName": "build-all",
+            "appliesTo": "src/imageit.cpp",
+            "contextType": "build",
+            "type": "launch",
+            "command": "${env.comspec}",
+            "args": [
+                // conforms to: g++ -std=c++17 -o Debug/imageit.exe -g src/imageit.cpp `pkg-config vips-cpp glib-2.0 --cflags --libs | sed -e 's;C:;/c;g' -` 
+                // note: run "pkg-config vips-cpp glib-2.0 --cflags --libs > params.txt" to generate parameters to text file
+                // DOS shell (cmd.exe) does not recognise backticks :(
+                "g++ -std=c++17 -o Debug/imageit.exe -g src/imageit.cpp -IC:/msys64/mingw64/include -IC:/msys64/mingw64/include/glib-2.0 -IC:/msys64/mingw64/lib/glib-2.0/include -IC:/msys64/mingw64/include/libgsf-1 -IC:/msys64/mingw64/include/libxml2 -IC:/msys64/mingw64/include/orc-0.4 -IC:/msys64/mingw64/include/OpenEXR -IC:/msys64/mingw64/include/openjpeg-2.4 -IC:/msys64/mingw64/include/librsvg-2.0 -IC:/msys64/mingw64/include/gdk-pixbuf-2.0 -IC:/msys64/mingw64/include/libpng16 -IC:/msys64/mingw64/include/cairo -IC:/msys64/mingw64/include/lzo -IC:/msys64/mingw64/include/freetype2 -IC:/msys64/mingw64/include/harfbuzz -IC:/msys64/mingw64/include/pixman-1 -IC:/msys64/mingw64/include/cfitsio -IC:/msys64/mingw64/include/pango-1.0 -IC:/msys64/mingw64/include/fribidi -mms-bitfields -LC:/msys64/mingw64/lib -lvips-cpp -lvips -lgobject-2.0 -lglib-2.0 -lintl"
+            ]
+        }
+    ]
+}

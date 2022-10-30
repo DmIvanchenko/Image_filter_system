@@ -1,0 +1,15 @@
+#Menu, #Import_from_file, #Crop, #Grayscale, #Exposure, #Gausian_blur
+{
+    border: 1px solid black;
+    border-radius: 0px;
+}
+
+#Control_panel
+{
+    min-width: 150px;
+}
+
+#Image 
+{
+    border: 1px solid black;
+}

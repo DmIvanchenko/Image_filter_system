@@ -1,0 +1,1 @@
+g++ -std=c++17 -o paint main.cpp `pkg-config --cflags --libs gtkmm-3.0`

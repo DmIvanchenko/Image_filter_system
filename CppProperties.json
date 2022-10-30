@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "inheritEnvironments": [
+                "mingw_64"
+            ],
+            "name": "Mingw64",
+            "includePath": [
+                "${env.INCLUDE}",
+                "${workspaceRoot}\\**"
+            ],
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "environments": [
+        {
+            "MINGW_PREFIX": "C:/msys64/mingw64",
+            "MINGW_CHOST ": "x86_64-w64-mingw32",
+            "MINGW_PACKAGE_PREFIX": "mingw-w64-x86_64",
+            "MSYSTEM": "MINGW64",
+            "MSYSTEM_CARCH": "x64_64",
+            "MSYSTEM_PREFIX": "${env.MINGW_PREFIX}",
+            "SHELL": "${env.MINGW_PREFIX}/../usr/bin/bash",
+            "TEMP": "${env.MINGW_PREFIX}/../tmp",
+            "TMP": "${env.TEMP}",
+            "PATH": "${env.MINGW_PREFIX}/bin;${env.MINGW_PREFIX}/../usr/local/bin;${env.MINGW_PREFIX}/../usr/bin;${env.PATH}",
+            "INCLUDE": "project/lib/include;${env.MINGW_PREFIX}/mingw/include;C:/msys64/mingw64/include/glib-2.0;C:/msys64/mingw64/lib/glib-2.0/include;C:/msys64/mingw64/include/libgsf-1;C:/msys64/mingw64/include/libxml2;C:/msys64/mingw64/include/orc-0.4;C:/msys64/mingw64/include/OpenEXR;C:/msys64/mingw64/include/openjpeg-2.4;C:/msys64/mingw64/include/librsvg-2.0;C:/msys64/mingw64/include/gdk-pixbuf-2.0;C:/msys64/mingw64/include/libpng16;C:/msys64/mingw64/include/cairo;C:/msys64/mingw64/include/lzo;C:/msys64/mingw64/include/freetype2;C:/msys64/mingw64/include/harfbuzz;C:/msys64/mingw64/include/pixman-1;C:/msys64/mingw64/include/cfitsio;C:/msys64/mingw64/include/pango-1.0;C:/msys64/mingw64/include/fribidi;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0/x86_64-w64-mingw32;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0/backward;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed;"
+        }
+    ]
+}

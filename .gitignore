@@ -1,0 +1,8 @@
+*.o
+*.d
+Debug/
+Build/imageit
+Release/
+out.png
+.vs/*/
+a.out
